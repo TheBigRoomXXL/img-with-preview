@@ -6,10 +6,9 @@ export class HTMLImageWithPreviewElement extends HTMLImageElement {
 
         this._orignalSrc = this.getAttribute("src");
 
-        if (this.srcFast) {
-
+        if (this.srcPreview) {
             this.src = ""; // Interupt current image loading
-            this.src = this.srcFast;
+            this.src = this.srcPreview;
         }
 
         if (this.complete) {
@@ -21,12 +20,12 @@ export class HTMLImageWithPreviewElement extends HTMLImageElement {
         this.addEventListener("load", this.onLoad);
     }
 
-    get srcFast() {
-        return this.getAttribute("src-fast");
+    get srcPreview() {
+        return this.getAttribute("src-preview");
     }
 
-    set srcFast(src) {
-        this.setAttribute("src-fast", src);
+    set srcPreview(src) {
+        this.setAttribute("src-preview", src);
     }
 
     onLoad() {

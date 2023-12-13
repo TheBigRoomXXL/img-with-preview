@@ -4,10 +4,10 @@
 
 ## Example
 
-Using the following HTML (notice the `src-fast` attribute):
+Using the following HTML (notice the `src-preview` attribute):
 
 ```html
-<img is="with-preview" src="/img/1.png" src-fast="/img/1.min.png" height="256px" alt="An astronaut cat"></img>
+<img is="with-preview" src="/img/1.png" src-preview="/img/1.min.png" height="256px" alt="An astronaut cat"></img>
 ``` 
 
 The browser will first load this low resolution image (23,3KB)
@@ -33,7 +33,7 @@ now. Use a script tag to import it.
 in the image elements where you want a preview. This does nothing in itself 
 from a user perspective but it register the additional behavior.
 
-3. Then you can simply add a `src-fast` attribute to your image tag with like to 
+3. Then you can simply add a `src-preview` attribute to your image tag with like to 
 a lower resolution image. 
 
 
