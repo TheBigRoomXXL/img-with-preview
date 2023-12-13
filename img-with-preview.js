@@ -12,7 +12,9 @@ export class HTMLImageWithPreviewElement extends HTMLImageElement {
             this.src = this.srcFast;
         }
 
-        if (this.complete) { //  Loading has completed instantly, can happen with cache
+        if (this.complete) {
+            // Loading has completed before load listener is registered
+            // That can happen with cache.
             this.onLoad();
         }
 
