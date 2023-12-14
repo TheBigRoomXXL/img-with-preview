@@ -53,3 +53,10 @@ preview.
 To ensure complete compatibility you can use the 
 [CutsomElement Polyfill](https://github.com/ungap/custom-elements#readme).
 It weight only 7.57KB. 
+
+
+### Known Issues
+
+On chrome, the full resolution image can start to load before the preview. The 
+request for the full image is then cancelled and, only then, the request for the
+preview version start. This behavior wast between 15ms and 30ms.
