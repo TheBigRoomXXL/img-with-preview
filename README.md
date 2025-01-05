@@ -12,11 +12,11 @@ Using the following HTML (notice the `src-preview` attribute):
 
 The browser will first load this low resolution image (23,3KB)
 
-<img src="img/1.min.png" height="256px"></img>
+<img src="https://raw.githubusercontent.com/TheBigRoomXXL/img-with-preview/refs/heads/main/img/1.min.webp" height="256px"></img>
 
 and only once the preview is loaded, the browser will load the full resolution image (1.8MB)
 
-<img src="img/1.png" height="256px"></img>
+<img src="https://raw.githubusercontent.com/TheBigRoomXXL/img-with-preview/refs/heads/main/img/1.webp" height="256px"></img>
 
 
 ## How to use it
